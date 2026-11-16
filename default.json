@@ -25,7 +25,17 @@
 			"labels": [
 				"linting"
 			]
-		}
+		},
+	    {
+			"matchPackageNames": ["vapoursynth"],
+			"matchCurrentVersion": "<=74",
+			"allowedVersions": "<=74"
+	    },
+	    {
+			"matchPackageNames": ["vapoursynth"],
+			"matchCurrentVersion": ">=75,<=79",
+			"allowedVersions": "<=79"
+	    }
 	],
 	"schedule": [
 		"* 8 */5 * *"
