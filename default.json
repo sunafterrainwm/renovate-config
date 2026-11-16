@@ -27,11 +27,13 @@
 			]
 		},
 	    {
+			"description": "Stay at R74: commit dec22cec (2026-04-16, 'Print warning when API3 plugins are loaded') adds an mtWarning for every API3 plugin; first tag containing it is R75RC1, so R74 is the last silent release",
 			"matchPackageNames": ["vapoursynth"],
 			"matchCurrentVersion": "<=74",
 			"allowedVersions": "<=74"
 	    },
 	    {
+			"description": "Cap at R79: commit 819672d3 (2026-08-13, 'Remove API3 support') replaces the API3 loader with a hard VSException and is already an ancestor of tag R80A1, so R79 is the last release that can load API3 plugins",
 			"matchPackageNames": ["vapoursynth"],
 			"matchCurrentVersion": ">=75,<=79",
 			"allowedVersions": "<=79"
